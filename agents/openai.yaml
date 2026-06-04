@@ -1,0 +1,3 @@
+display_name: AI Coding Foundation
+short_description: 初始化 AI Coding 项目治理地基与工作入口
+default_prompt: 使用 $aicoding-foundation 为当前新项目初始化 AGENTS.md 和 .foundation 治理结构。
