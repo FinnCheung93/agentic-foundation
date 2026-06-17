@@ -11,7 +11,7 @@ description: >-
   foundation is useful, analyze only and do not write files.
 metadata:
   short-description: Initialize agentic project governance
-  version: v1.4.1
+  version: v1.6.0
   updated: 2026-06-17
 ---
 
@@ -49,7 +49,7 @@ AGENTS.md
   SUGGESTIONS.md
 ```
 
-不要新增其它治理文件，除非用户明确要求扩展。
+不要新增其它默认治理文件或目录，除非用户明确要求扩展。
 
 ## 生成物职责契约
 
@@ -73,6 +73,7 @@ AGENTS.md
 - `AGENTS.md` 不展开检查表，只保留工作循环、治理触发点和硬规则。
 - `CHECKS.md` 不重新定义路由。
 - `PRINCIPLES.md` 不写状态、日志或检查步骤。
+- 扩展文档只登记职责、依赖性质和读取时机；foundation 不接管 PRD、Specs、任务拆分、架构设计或其它专业流程。
 
 ## 工作流
 
@@ -141,13 +142,17 @@ python scripts/init_foundation.py <target_dir> --project-name <name> --language 
 - 脚本仍只生成 `AGENTS.md` + `.foundation/` 下 6 个文件。
 - `AGENTS.md` 只包含入口协议、Mandatory Loop、Governance Hooks、Hard Rules 和冲突处理，不展开详细检查表。
 - `.foundation/README.md` 包含文件职责和唯一记忆路由表，路由按信息性质表达，不写成机械 if-else。
+- `.foundation/README.md` 包含扩展文档登记、硬依赖 / 软依赖判断，并说明共享语言文档只做术语，不承载 spec、实现细节或计划。
 - `.foundation/PRINCIPLES.md` 只包含长期原则、禁区和取舍依据，不写状态/日志更新步骤。
+- `.foundation/PRINCIPLES.md` 包含长期文档抗过期、临时验证产物不自动成为长期结构、foundation 不接管专业流程。
 - `.foundation/STATE.md` 使用“最近接续点”，最多保留 3-5 条恢复需要的信息。
-- `.foundation/STATE.md` 包含“治理脉冲”，以 3 轮重要工作为阈值触发治理复盘；`STATE.md` 通过修订保持当前快照，不追加成历史流水。
+- `.foundation/STATE.md` 包含“治理脉冲”，以 3 个合格治理信号为阈值触发治理复盘；`STATE.md` 通过修订保持当前快照，不追加成历史流水。
 - `.foundation/LOG.md` 记录已发生的重要事件、决策、变更、事故、验收和复盘。
 - `.foundation/CHECKS.md` 只做检查表，不重新定义文件职责或记忆路由。
 - `.foundation/CHECKS.md` 包含治理钩子检查、长期原则误投扫描、自进化运行检查和发布一致性检查。
+- `.foundation/CHECKS.md` 包含反馈环优先、临时验证产物归宿、重要决策沉淀判断和长期文档抗过期检查。
 - `.foundation/SUGGESTIONS.md` 是未裁决治理提案队列，不吞掉已裁决且应生效的正式规则。
+- `LOG.md` 和 `SUGGESTIONS.md` 没有被改造成 ADR 文件；不得默认创建 `docs/adr/` 或其它扩展目录。
 - `STATE.md`、`LOG.md`、`SUGGESTIONS.md` 的时间统一使用“日期 + 分钟 + 时区”，例如 `2026-06-02 14:35 CST`，不要求秒级。
 
 如果检查发现职责重复，先修订模板，再重新用临时目录 dry run。
@@ -220,4 +225,5 @@ python scripts/init_foundation.py <target_dir> --project-name <name> --language 
 - `STATE.md` 没有生成详细项目计划或历史流水。
 - `STATE.md` 包含治理脉冲，且最近接续点保持 3-5 条当前恢复信息。
 - `SUGGESTIONS.md` 是待裁决治理提案队列。
+- 扩展文档、共享语言和重要决策判断被吸收到现有治理体系中，未新增默认目录。
 - 若存在冲突，未覆盖任何已有文件。
