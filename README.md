@@ -9,12 +9,7 @@
 
 <br>
 
-<p>
-  <img src="https://img.shields.io/badge/Codex-Skill-2563eb?style=flat" />
-  <img src="https://img.shields.io/badge/Version-v1.4.1-14b8a6?style=flat" />
-  <img src="https://img.shields.io/badge/Language-中文-f59e0b?style=flat" />
-  <img src="https://img.shields.io/badge/Mode-Governance-7c3aed?style=flat" />
-</p>
+<p><sub><code>Codex Skill</code> · <code>Version v1.4.1</code> · <code>Language 中文</code> · <code>Mode Governance</code></sub></p>
 
 </div>
 
