@@ -11,7 +11,7 @@ description: >-
   foundation is useful, analyze only and do not write files.
 metadata:
   short-description: Initialize agentic project governance
-  version: v1.4.0
+  version: v1.4.1
   updated: 2026-06-17
 ---
 

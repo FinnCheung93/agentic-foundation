@@ -11,7 +11,7 @@
 
 <p>
   <img src="https://img.shields.io/badge/Codex-Skill-2563eb?style=flat&logo=openai&logoColor=white" />
-  <img src="https://img.shields.io/badge/Version-v1.4.0-14b8a6?style=flat&logo=github&logoColor=white" />
+  <img src="https://img.shields.io/badge/Version-v1.4.1-14b8a6?style=flat&logo=github&logoColor=white" />
   <img src="https://img.shields.io/badge/Language-中文-f59e0b?style=flat&logo=markdown&logoColor=white" />
   <img src="https://img.shields.io/badge/Mode-Governance-7c3aed?style=flat" />
 </p>
