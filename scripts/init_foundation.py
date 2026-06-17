@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Initialize an AI Coding governance foundation in a project directory."""
+"""Initialize an agentic governance foundation in a project directory."""
 
 from __future__ import annotations
 
@@ -19,12 +19,12 @@ FILES = [
     (".foundation/SUGGESTIONS.md", ".foundation/SUGGESTIONS.md"),
 ]
 
-FOUNDATION_VERSION = "1.3.0"
+FOUNDATION_VERSION = "1.4.0"
 
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Create AGENTS.md and .foundation/ governance files for a new AI Coding project."
+        description="Create AGENTS.md and .foundation/ governance files for an agentic project."
     )
     parser.add_argument("target_dir", help="Project directory to initialize.")
     parser.add_argument("--project-name", default=None, help="Project display name.")

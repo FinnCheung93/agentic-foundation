@@ -1,30 +1,30 @@
 ---
-name: aicoding-foundation
+name: agentic-foundation
 description: >-
-  Initialize a lightweight governance foundation for AI Coding projects, or review and incrementally
+  Initialize a lightweight governance foundation for agentic projects, or review and incrementally
   sync an existing foundation to the current governance capability. Use when the user has chosen a
   project folder and wants AGENTS.md plus a .foundation/ governance cockpit with project principles,
   state, log, checks, and human-reviewed suggestions. Also use for Chinese requests like 项目初始化,
-  打地基, 治理舱, agent 工作灯塔, 开工前结构, 检查 foundation 版本, 同步治理地基, or 升级 foundation.
+  打地基, 治理舱, agent 工作灯塔, 开工前结构, agentic foundation, 检查 foundation 版本, 同步治理地基, or 升级 foundation.
   Do not use for PRD writing, SDD Specs generation, project planning, task breakdown, engineering
   architecture, or direct implementation. If the user is only discussing whether a governance
   foundation is useful, analyze only and do not write files.
 metadata:
-  short-description: Initialize AI Coding project governance
-  version: v1.3.0
-  updated: 2026-06-16
+  short-description: Initialize agentic project governance
+  version: v1.4.0
+  updated: 2026-06-17
 ---
 
-# AI Coding Foundation
+# Agentic Foundation
 
-这个 skill 用于在新 AI Coding 项目开工前初始化一套轻量治理地基：根目录 `AGENTS.md` + `.foundation/`。它让后续 agent 工作有入口协议、长期原则、当前状态、历史日志、检查清单和未裁决治理提案。
+这个 skill 用于在 agent 参与的项目开工前初始化一套轻量治理地基：根目录 `AGENTS.md` + `.foundation/`。它让后续 agent 工作有入口协议、长期原则、当前状态、历史日志、检查清单和未裁决治理提案。
 
 ## 适用场景
 
 适用：
 
-- 用户刚创建或选定一个新项目目录，希望初始化 AI Coding 工作地基。
-- 用户说“项目初始化 / 打地基 / 初始化项目地基 / 治理舱 / agent 工作灯塔 / agent 工作规则 / 开工前结构 / AI Coding foundation”。
+- 用户刚创建或选定一个新项目目录，希望初始化 agent 协作工作地基。
+- 用户说“项目初始化 / 打地基 / 初始化项目地基 / 治理舱 / agent 工作灯塔 / agent 工作规则 / 开工前结构 / Agentic Foundation”。
 - 用户需要一个跨会话续航和自进化机制，而不是只依赖当前对话上下文。
 
 不适用：

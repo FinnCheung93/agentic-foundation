@@ -1,3 +1,3 @@
-display_name: AI Coding Foundation
-short_description: 初始化或增量同步 AI Coding 项目治理地基
-default_prompt: 使用 $aicoding-foundation 为项目初始化 AGENTS.md 和 .foundation 治理结构；若项目已有地基，先检查版本和差异，获得授权后再增量同步，不覆盖项目特有内容。
+display_name: Agentic Foundation
+short_description: 初始化或增量同步 agent 参与项目的治理地基
+default_prompt: 使用 $agentic-foundation 为项目初始化 AGENTS.md 和 .foundation 治理结构；若项目已有地基，先检查版本和差异，获得授权后再增量同步，不覆盖项目特有内容。

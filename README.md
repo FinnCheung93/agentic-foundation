@@ -1,9 +1,9 @@
 <div align="center">
 
-## AI Coding 地基
+## Agentic Foundation
 
 在项目开工前，把协作原则、状态记录和治理结构先立起来。  
-适合用作 AI Coding 项目的开工前治理 Skill，也可检查和增量同步已有治理地基。
+适合用作 agent 参与项目的开工前治理 Skill，也可检查和增量同步已有治理地基。
 
 <sub>Governance · Principles · State · Handoff</sub>
 
@@ -11,7 +11,7 @@
 
 <p>
   <img src="https://img.shields.io/badge/Codex-Skill-2563eb?style=flat&logo=openai&logoColor=white" />
-  <img src="https://img.shields.io/badge/Version-v1.3.0-14b8a6?style=flat&logo=github&logoColor=white" />
+  <img src="https://img.shields.io/badge/Version-v1.4.0-14b8a6?style=flat&logo=github&logoColor=white" />
   <img src="https://img.shields.io/badge/Language-中文-f59e0b?style=flat&logo=markdown&logoColor=white" />
   <img src="https://img.shields.io/badge/Mode-Governance-7c3aed?style=flat" />
 </p>
@@ -19,7 +19,7 @@
 </div>
 
 ```text
-AI Coding 地基用于初始化或维护项目的治理舱。
+Agentic Foundation 用于初始化或维护项目的治理舱。
 它会建立原则、状态、日志、检查项和未裁决提案队列，让后续 agent 工作有稳定上下文和自进化入口。
 ```
 
@@ -27,7 +27,7 @@ AI Coding 地基用于初始化或维护项目的治理舱。
 
 - 建立项目开工前的协作规则和工作边界
 - 记录项目原则、当前状态、变更日志和检查项
-- 给 AI Coding 任务提供长期可读的项目上下文
+- 给 agent 参与的项目提供长期可读的上下文
 - 让治理文件在工作中持续触发记录、检查、复盘和提案
 - 检查已有治理地基版本，并在授权后做增量同步
 
