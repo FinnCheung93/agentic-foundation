@@ -11,7 +11,7 @@ description: >-
   only discussing whether a governance foundation is useful, analyze only and do not write files.
 metadata:
   short-description: Initialize agentic project governance
-  version: v1.8.0
+  version: v1.9.1
   updated: 2026-06-18
 ---
 
@@ -141,7 +141,7 @@ python scripts/init_foundation.py <target_dir> --project-name <name> --language 
 - 结构完整：只生成根目录 `AGENTS.md` 和 `.foundation/` 下 5 个文件。
 - 职责清晰：6 个生成物符合职责契约，没有互相重定义路由、状态、历史或提案。
 - 关键能力存在：写入授权、冲突保护、信息性质路由、当前接续、历史记录、未裁决提案、旧项目增量同步。
-- 表达可执行：重要规则使用清楚的行为描述，避免依赖自造词、错用词或只有用户自己理解的隐喻。
+- 表达可执行：重要规则使用直白行为句，避免自造词、错用词、隐喻和为了显得有产出而强行改写。
 - 不新增默认目录：扩展文档、接续记忆、决策记录、检查体系或专业流程只登记职责和读取时机，不由本 skill 默认创建。
 - 时间统一：`STATE.md`、`LOG.md`、`SUGGESTIONS.md` 使用 `YYYY-MM-DD HH:mm CST`，不要求秒级。
 
@@ -203,6 +203,7 @@ python scripts/init_foundation.py <target_dir> --project-name <name> --language 
 - `.foundation/` 中 5 个文件均已生成。
 - 6 个生成物符合职责契约，按信息性质路由，未出现明显重复承载。
 - `PRINCIPLES.md` 区分裁决清晰的长期约束和未裁决治理建议。
+- `AGENTS.md` 和 `PRINCIPLES.md` 保留核心行为底线：不确定就问、没要求的不写、只改被要求的部分、先明确可验证完成标准、不强行产出。
 - `STATE.md` 顶部包含极短项目简述，没有生成详细项目计划或历史流水。
 - `LOG.md` 没有新增错误记录语义或错误专用字段。
 - `SUGGESTIONS.md` 是未裁决治理提案队列和防复发候选队列。

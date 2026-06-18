@@ -18,7 +18,7 @@ FILES = [
     (".foundation/SUGGESTIONS.md", ".foundation/SUGGESTIONS.md"),
 ]
 
-FOUNDATION_VERSION = "1.8.0"
+FOUNDATION_VERSION = "1.9.1"
 
 
 def parse_args() -> argparse.Namespace:
