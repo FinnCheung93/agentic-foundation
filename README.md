@@ -9,7 +9,7 @@
 
 <br>
 
-<p><kbd>Codex Skill</kbd> <kbd>Version v1.6.0</kbd> <kbd>Language 中文</kbd> <kbd>Mode Governance</kbd></p>
+<p><kbd>Codex Skill</kbd> <kbd>Version v1.7.0</kbd> <kbd>Language 中文</kbd> <kbd>Mode Governance</kbd></p>
 
 </div>
 

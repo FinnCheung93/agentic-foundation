@@ -11,8 +11,8 @@ description: >-
   foundation is useful, analyze only and do not write files.
 metadata:
   short-description: Initialize agentic project governance
-  version: v1.6.0
-  updated: 2026-06-17
+  version: v1.7.0
+  updated: 2026-06-18
 ---
 
 # Agentic Foundation
@@ -49,7 +49,7 @@ AGENTS.md
   SUGGESTIONS.md
 ```
 
-不要新增其它默认治理文件或目录，除非用户明确要求扩展。
+不要新增其它默认治理文件或目录，除非用户明确要求扩展。不要默认创建 handoff、learning records、out-of-scope、notes 等接续或记忆目录。
 
 ## 生成物职责契约
 
@@ -68,7 +68,7 @@ AGENTS.md
 硬边界：
 
 - `README.md` 是唯一记忆路由，按信息性质引导 agent 判断写入位置。
-- `STATE.md` 只写当前接续，不写历史流水。
+- `STATE.md` 只写当前接手快照，不写历史流水，也不复制已有 artifact 全文。
 - `LOG.md` 承载已发生的重要事件。
 - `AGENTS.md` 不展开检查表，只保留工作循环、治理触发点和硬规则。
 - `CHECKS.md` 不重新定义路由。
@@ -146,13 +146,18 @@ python scripts/init_foundation.py <target_dir> --project-name <name> --language 
 - `.foundation/PRINCIPLES.md` 只包含长期原则、禁区和取舍依据，不写状态/日志更新步骤。
 - `.foundation/PRINCIPLES.md` 包含长期文档抗过期、临时验证产物不自动成为长期结构、foundation 不接管专业流程。
 - `.foundation/STATE.md` 使用“最近接续点”，最多保留 3-5 条恢复需要的信息。
-- `.foundation/STATE.md` 包含“治理脉冲”，以 3 个合格治理信号为阈值触发治理复盘；`STATE.md` 通过修订保持当前快照，不追加成历史流水。
+- `.foundation/STATE.md` 包含当前目标、当前状态、下一步建议、关键约束、验收方式和范围外事项；引用已有 artifact，不复制全文。
+- `.foundation/STATE.md` 包含“治理脉冲”，以 3 个合格治理信号为阈值触发治理复盘；`STATE.md` 通过修订保持当前接手快照，不追加成历史流水。
 - `.foundation/LOG.md` 记录已发生的重要事件、决策、变更、事故、验收和复盘。
+- `.foundation/LOG.md` 支持记录“不做 / 拒绝 / 暂不支持”的裁决、原因和取舍，避免未来重复重开。
 - `.foundation/CHECKS.md` 只做检查表，不重新定义文件职责或记忆路由。
 - `.foundation/CHECKS.md` 包含治理钩子检查、长期原则误投扫描、自进化运行检查和发布一致性检查。
 - `.foundation/CHECKS.md` 包含反馈环优先、临时验证产物归宿、重要决策沉淀判断和长期文档抗过期检查。
+- `.foundation/CHECKS.md` 包含接手快照更新、引用优先、复制膨胀检查、范围边界检查和不做事项复现检查。
 - `.foundation/SUGGESTIONS.md` 是未裁决治理提案队列，不吞掉已裁决且应生效的正式规则。
+- `.foundation/SUGGESTIONS.md` 支持已替代状态，旧提案或旧理解被新裁决取代时保留历史但标记替代。
 - `LOG.md` 和 `SUGGESTIONS.md` 没有被改造成 ADR 文件；不得默认创建 `docs/adr/` 或其它扩展目录。
+- 不默认创建 `MISSION.md`、`learning-records/`、`NOTES.md`、`.out-of-scope/` 或 handoff 文档。
 - `STATE.md`、`LOG.md`、`SUGGESTIONS.md` 的时间统一使用“日期 + 分钟 + 时区”，例如 `2026-06-02 14:35 CST`，不要求秒级。
 
 如果检查发现职责重复，先修订模板，再重新用临时目录 dry run。
@@ -223,7 +228,8 @@ python scripts/init_foundation.py <target_dir> --project-name <name> --language 
 - 7 个生成物符合职责契约，按信息性质路由，未出现明显重复承载。
 - `PRINCIPLES.md` 区分裁决清晰的长期约束和未裁决治理建议。
 - `STATE.md` 没有生成详细项目计划或历史流水。
-- `STATE.md` 包含治理脉冲，且最近接续点保持 3-5 条当前恢复信息。
+- `STATE.md` 是当前接手快照，包含下一步、约束、验收和范围外事项；最近接续点保持 3-5 条当前恢复信息。
 - `SUGGESTIONS.md` 是待裁决治理提案队列。
 - 扩展文档、共享语言和重要决策判断被吸收到现有治理体系中，未新增默认目录。
+- 接续和机构记忆规则被吸收到现有治理体系中，未新增 handoff、learning records、out-of-scope 或 notes 目录。
 - 若存在冲突，未覆盖任何已有文件。
