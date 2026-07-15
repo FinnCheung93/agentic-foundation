@@ -9,7 +9,7 @@ import sys
 from pathlib import Path
 
 
-FOUNDATION_VERSION = "2.0.0"
+FOUNDATION_VERSION = "2.0.1"
 
 FILES = [
     ("AGENTS.md", "AGENTS.md"),

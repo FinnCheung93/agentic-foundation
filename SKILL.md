@@ -12,8 +12,8 @@ description: >-
   analyze only and do not write files.
 metadata:
   short-description: Initialize or sync project foundation
-  version: v2.0.0
-  updated: 2026-06-23
+  version: v2.0.1
+  updated: 2026-07-14
 ---
 
 # Agentic Foundation
@@ -51,6 +51,8 @@ Do not create ADR, archive, review, hook, coding-guidance, open-questions, QA, T
 | `docs/foundation/LOG.md` | Important history ledger: initialization, upgrades, decisions, incidents, reviews, archive events, and artifact references. |
 
 Keep details in the smallest appropriate artifact. Prefer paths and short summaries over copying long PRDs, Specs, logs, reviews, issues, or handoff text into foundation files.
+
+Preserve validation integrity: failed tests, checks, reviews, or acceptance criteria are evidence. Do not weaken, skip, delete, or rewrite validation just to make it pass. Change validation only when the requirement, interface, or validation itself is demonstrably outdated or wrong, and explain what protection remains.
 
 ## Workflow Selection
 
@@ -143,6 +145,7 @@ Agents should actively notice foundation update opportunities at natural lifecyc
 - user says remember, later, do not repeat, why again, sync, upgrade, review, decision, archive, ADR, hook, subagent
 - before modifying stable entrances, project maps, foundation files, templates, scripts, migrations, archive areas, or optional modules
 - while seeing conflicts, outdated paths, missing evidence, repeated errors, unverifiable results, scope creep, or document/repo drift
+- when tests, checks, reviews, acceptance criteria, or validation rules fail unexpectedly
 - after important work, verification, migration, archive, sync, subagent review, or module addition
 - when context is getting long, a handoff is needed, or a phase is starting or ending
 
