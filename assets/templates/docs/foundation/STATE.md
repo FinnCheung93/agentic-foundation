@@ -3,49 +3,22 @@
 项目：`{{PROJECT_NAME}}`  
 最后更新：`{{INIT_TIME}}`
 
-本文档是当前接手快照。它通过修订保持当下状态，不持续追加历史流水；重要历史进入 `LOG.md`，长内容引用原 artifact。
+本文档是当前接手快照。通过修订保持当下状态；经过和历史留在 `LOG.md`，详细内容引用原 artifact。
 
-## Project Brief
+## 项目简述
 
 {{PROJECT_PURPOSE}}
 
-## Current Goal
+## 正在推进
 
-待补充：当前阶段正在解决什么。
+- 项目启动：等待用户明确第一项工作；收到任务后在这里保留必要的进展、下一步和关键路径。
 
-## Current Status
+## 共同注意
 
-Foundation v{{FOUNDATION_VERSION}} 已初始化，项目尚未进入后续具体工作。
+- 当前暂无跨事项依赖、阻塞或待裁决事项。
 
-## Current Scope
+## 参考
 
-- 当前触碰范围：暂无。
-- 依赖范围：暂无。
-- 本轮不触碰：暂无。
-
-## Next Step
-
-待用户明确下一步任务后，先按 `AGENTS.md` 对齐目标、边界和完成标准。
-
-## Key Constraints
-
-- 不覆盖已有文件或用户改动。
-- 不把 PRD、Specs、项目计划、架构设计、QA 或实现任务写入 foundation。
-
-## Validation
-
-Foundation 结构完整；后续 agent 能从 `AGENTS.md`、`docs/README.md` 和本文件恢复当前状态。
-
-## Out of Scope
-
-PRD、Specs、项目计划、任务拆分、架构设计、QA、发布检查和实现工作不由本文档承载。
-
-## Current Blockers
-
-暂无。
-
-## Handoff Notes
-
-只保留 3-5 条影响接续的当前事项；详细过程引用 `LOG.md`、review、ADR、PRD、Specs 或其它 artifact。
-
-- `{{INIT_TIME}}`：Foundation v{{FOUNDATION_VERSION}} 已初始化；下一步等待用户目标。
+- `AGENTS.md`
+- `README.md`
+- `docs/foundation/README.md`
