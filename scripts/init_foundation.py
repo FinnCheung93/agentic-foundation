@@ -12,7 +12,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 
-FOUNDATION_VERSION = "2.1.2"
+FOUNDATION_VERSION = "2.1.4"
 
 FILES = [
     ("AGENTS.md", "AGENTS.md"),

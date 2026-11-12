@@ -24,8 +24,9 @@ location unless a confirmed migration changes it.
 
 At the first real archive event, create `docs/archive/README.md`. The index records path,
 status, reason, replacement or no-replacement, archive time, and a brief reading cue. Valid
-statuses are `deprecated`, `superseded`, `archived`, and `deleted-reference`. Preserve the old
-artifact by default; moving, renaming, or deletion requires confirmation.
+statuses are `deprecated`, `superseded`, `archived`, and `deleted-reference`. Preserve historical
+content and keep its location traceable. Once enabled, routine archive upkeep follows
+[file maintenance](record-routing.md#file-maintenance).
 
 ## Subagent Workflow
 

@@ -15,6 +15,11 @@ real failure. Give reviewers the raw artifact and acceptance boundary, not the e
 Resolve or surface P0/P1 findings before declaring success. Do not keep iterating merely to
 erase low-priority wording preferences.
 
+For changes to reading or memory rules, exercise consecutive updates and a fresh-context handoff.
+Include a completed activity, a resolved blocker, a replaced decision, and an ongoing parallel
+activity. Check recovery of current facts and authorization, access to history, justified rereads,
+and preservation of unaffected work. Evaluate usefulness and correctness, not a fixed length cap.
+
 When a check fails, investigate the target behavior before changing the check. Change a test,
 review rule, or acceptance condition only when its premise is demonstrably outdated or wrong,
 and state what protection remains.

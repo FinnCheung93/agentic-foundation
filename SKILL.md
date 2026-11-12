@@ -8,8 +8,8 @@ description: >-
   Specs, plans, architecture, QA/TDD workflows, or implementation work itself.
 metadata:
   short-description: Initialize or evolve a project foundation
-  version: v2.1.2
-  updated: 2026-09-07
+  version: v2.1.4
+  updated: 2026-11-02
 ---
 
 # Agentic Foundation
@@ -33,11 +33,13 @@ For discussion or assessment only, analyze without writing.
   or create a module outside the authorized scope.
 - Let the project's entrance, map, and current state establish an initial view. Follow the
   task, risk, and evidence to decide what else to inspect; a map is navigation, not proof.
+  Reuse context that remains trustworthy. Recheck relevant sources when information changes,
+  is missing, or becomes uncertain; return the findings and evidence needed for the next judgment.
 - Keep claims, completion statements, and modifications proportionate to their evidence and
   scope. Do not weaken validation merely to obtain a pass.
 - Prefer the smallest action that addresses the actual issue after understanding its impact.
-- Keep the default structure lean. Add files, folders, or automation only when they solve a
-  real continuing problem and the user has agreed to their creation.
+- Keep the default structure lean. New modules or automation need a real continuing purpose
+  and user authorization; use established project locations for routine file organization.
 
 ## Initialize
 
@@ -58,8 +60,8 @@ Read [migration policy](references/migration-policy.md) and [record routing](ref
 Inspect only the active entrance, project map, current state, and paths naturally relevant to
 the requested upgrade. Produce a small incremental-change preview before writing. A request to
 check or assess stops at the preview; an explicit sync or upgrade authorizes only the described
-incremental scope. Preserve user additions and project-specific rules; migrations, removals,
-new modules, conflicts, and scope expansion require explicit confirmation.
+incremental scope. Preserve user additions and project-specific rules; high-risk migrations,
+overwrites, irrecoverable deletion, new modules, conflicts, and scope expansion require explicit confirmation.
 
 ## Extend
 
@@ -70,7 +72,9 @@ or change the module only after the user has authorized that addition.
 ## Record and Evolve
 
 Use [record routing](references/record-routing.md) when current state, history, long-lived
-constraints, decisions, or archived material need different homes. When a correction, drift,
+constraints, decisions, or archived material need different homes. Actively maintain the files
+and directories involved in current work, keeping them easy to find and maintain under that
+reference's file-maintenance guidance. When a correction, drift,
 repeat failure, or important boundary crossing could change future collaboration, make a
 lightweight judgment: update an already-authorized existing artifact, propose an addition, or
 stay quiet when there is no durable conclusion.
